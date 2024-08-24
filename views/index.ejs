@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toggle">
+        <button id="loginButton" class="toggle-button active">Login</button>
+        <button id="signupButton" class="toggle-button">Signup</button>
+      </div>
+      <div id="loginForm" class="form">
+        <form method="post" action="">
+          <label for="loginEmail">Email</label>
+          <input
+            type="email"
+            id="loginEmail"
+            required
+            placeholder="Exaple@gmail.com"
+          />
+          <label for="loginPassword">Password</label>
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Example@123"
+            required
+          />
+          <button type="submit" class="submit-button">Login</button>
+        </form>
+      </div>
+      <div id="signupForm" class="form hidden">
+        <form>
+          <label for="signupEmail">Email</label>
+          <input
+            type="email"
+            id="signupEmail"
+            placeholder="Exaple@gmail.com"
+            required
+          />
+          <label for="signupPassword">Password</label>
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Exaple@gmail.com"
+            required
+          />
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Example@123"
+            required
+          />
+          <button type="submit" class="submit-button">Signup</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
